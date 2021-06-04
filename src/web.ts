@@ -1,10 +1,13 @@
 import { WebPlugin } from '@capacitor/core';
 
-import type { FirebaseAppPlugin } from './definitions';
+import type { FirebaseAppPlugin, GetNameResult, GetOptionsResult } from './definitions';
 
 export class FirebaseAppWeb extends WebPlugin implements FirebaseAppPlugin {
-  async echo(options: { value: string }): Promise<{ value: string }> {
-    console.log('ECHO', options);
-    return options;
+  async getName(): Promise<GetNameResult> {
+    throw this.unimplemented('Not implemented on web.');
+  }
+
+  async getOptions(): Promise<GetOptionsResult> {
+    throw this.unimplemented('Not implemented on web.');
   }
 }
