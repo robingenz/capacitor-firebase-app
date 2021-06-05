@@ -10,6 +10,7 @@ import com.google.firebase.FirebaseOptions;
 
 @CapacitorPlugin(name = "FirebaseApp")
 public class FirebaseAppPlugin extends Plugin {
+
     private FirebaseApp firebaseAppInstance;
 
     public void load() {
