@@ -9,9 +9,9 @@ import FirebaseCore
  */
 @objc(FirebaseAppPlugin)
 public class FirebaseAppPlugin: CAPPlugin {
-    
-    public override func load() {
-        if (FirebaseApp.app() == nil) {
+
+    override public func load() {
+        if FirebaseApp.app() == nil {
             FirebaseApp.configure()
         }
     }
@@ -21,7 +21,7 @@ public class FirebaseAppPlugin: CAPPlugin {
             "name": FirebaseApp.app()?.name ?? ""
         ])
     }
-    
+
     @objc func getOptions(_ call: CAPPluginCall) {
         call.resolve([
             "apiKey": FirebaseApp.app()?.options.apiKey ?? "",
@@ -29,7 +29,7 @@ public class FirebaseAppPlugin: CAPPlugin {
             "databaseUrl": FirebaseApp.app()?.options.apiKey ?? "",
             "gcmSenderId": FirebaseApp.app()?.options.apiKey ?? "",
             "projectId": FirebaseApp.app()?.options.apiKey ?? "",
-            "storageBucket": FirebaseApp.app()?.options.apiKey ?? "",
+            "storageBucket": FirebaseApp.app()?.options.apiKey ?? ""
         ])
     }
 }
