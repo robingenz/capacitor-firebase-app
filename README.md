@@ -53,10 +53,59 @@ const getOptions = async () => {
 ## API
 
 <docgen-index>
+
+* [`getName()`](#getname)
+* [`getOptions()`](#getoptions)
+* [Interfaces](#interfaces)
+
 </docgen-index>
 
 <docgen-api>
 <!--Update the source file JSDoc comments and rerun docgen to update the docs below-->
+
+### getName()
+
+```typescript
+getName() => any
+```
+
+**Returns:** <code>any</code>
+
+--------------------
+
+
+### getOptions()
+
+```typescript
+getOptions() => any
+```
+
+**Returns:** <code>any</code>
+
+--------------------
+
+
+### Interfaces
+
+
+#### GetNameResult
+
+| Prop       | Type                | Description                  |
+| ---------- | ------------------- | ---------------------------- |
+| **`name`** | <code>string</code> | The unique name of this app. |
+
+
+#### GetOptionsResult
+
+| Prop                | Type                | Description                                                    |
+| ------------------- | ------------------- | -------------------------------------------------------------- |
+| **`apiKey`**        | <code>string</code> | API key used for authenticating requests from your app.        |
+| **`applicationId`** | <code>string</code> | Google App ID used to uniquely identify an instance of an app. |
+| **`databaseUrl`**   | <code>string</code> | The database root URL.                                         |
+| **`gcmSenderId`**   | <code>string</code> | The Project Number.                                            |
+| **`projectId`**     | <code>string</code> | The Google Cloud project ID.                                   |
+| **`storageBucket`** | <code>string</code> | The Google Cloud Storage bucket name.                          |
+
 </docgen-api>
 
 ## Changelog
