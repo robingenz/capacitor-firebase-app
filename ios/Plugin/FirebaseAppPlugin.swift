@@ -25,11 +25,11 @@ public class FirebaseAppPlugin: CAPPlugin {
     @objc func getOptions(_ call: CAPPluginCall) {
         call.resolve([
             "apiKey": FirebaseApp.app()?.options.apiKey ?? "",
-            "applicationId": FirebaseApp.app()?.options.apiKey ?? "",
-            "databaseUrl": FirebaseApp.app()?.options.apiKey ?? "",
-            "gcmSenderId": FirebaseApp.app()?.options.apiKey ?? "",
-            "projectId": FirebaseApp.app()?.options.apiKey ?? "",
-            "storageBucket": FirebaseApp.app()?.options.apiKey ?? ""
+            "applicationId": FirebaseApp.app()?.options.googleAppID ?? "",
+            "databaseUrl": FirebaseApp.app()?.options.databaseURL ?? "",
+            "gcmSenderId": FirebaseApp.app()?.options.gcmSenderID ?? "",
+            "projectId": FirebaseApp.app()?.options.projectID ?? "",
+            "storageBucket": FirebaseApp.app()?.options.storageBucket ?? ""
         ])
     }
 }
