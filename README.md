@@ -66,10 +66,10 @@ const getOptions = async () => {
 ### getName()
 
 ```typescript
-getName() => any
+getName() => Promise<GetNameResult>
 ```
 
-**Returns:** <code>any</code>
+**Returns:** <code>Promise&lt;<a href="#getnameresult">GetNameResult</a>&gt;</code>
 
 --------------------
 
@@ -77,10 +77,10 @@ getName() => any
 ### getOptions()
 
 ```typescript
-getOptions() => any
+getOptions() => Promise<GetOptionsResult>
 ```
 
-**Returns:** <code>any</code>
+**Returns:** <code>Promise&lt;<a href="#getoptionsresult">GetOptionsResult</a>&gt;</code>
 
 --------------------
 
