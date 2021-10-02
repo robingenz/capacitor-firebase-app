@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/robingenz/capacitor-firebase-app/compare/v1.1.0...v1.2.0) (2021-10-02)
+
+
+### Features
+
+* add `web` support ([#8](https://github.com/robingenz/capacitor-firebase-app/issues/8)) ([2a6a493](https://github.com/robingenz/capacitor-firebase-app/commit/2a6a493d7a3d4c6cbc3a052c6c60c7d422e3203f))
+
 ## [1.1.0](https://github.com/robingenz/capacitor-firebase-app/compare/v1.0.0...v1.1.0) (2021-07-31)
 
 
