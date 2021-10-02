@@ -1,4 +1,5 @@
 import { WebPlugin } from '@capacitor/core';
+import { getApp } from 'firebase/app';
 
 import type {
   FirebaseAppPlugin,
@@ -8,10 +9,21 @@ import type {
 
 export class FirebaseAppWeb extends WebPlugin implements FirebaseAppPlugin {
   async getName(): Promise<GetNameResult> {
-    throw this.unimplemented('Not implemented on web.');
+    const app = getApp();
+    return {
+      name: app.name,
+    };
   }
 
   async getOptions(): Promise<GetOptionsResult> {
-    throw this.unimplemented('Not implemented on web.');
+    const app = getApp();
+    return {
+      apiKey: app.options.apiKey || '',
+      applicationId: app.options.appId || '',
+      databaseUrl: app.options.databaseURL || '',
+      gcmSenderId: app.options.messagingSenderId || '',
+      projectId: app.options.projectId || '',
+      storageBucket: app.options.storageBucket || '',
+    };
   }
 }

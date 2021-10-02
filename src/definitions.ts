@@ -1,5 +1,11 @@
 export interface FirebaseAppPlugin {
+  /**
+   * Get the name for this app.
+   */
   getName(): Promise<GetNameResult>;
+  /**
+   * Get the configuration options for this app.
+   */
   getOptions(): Promise<GetOptionsResult>;
 }
 

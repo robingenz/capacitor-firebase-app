@@ -73,6 +73,8 @@ const getOptions = async () => {
 getName() => Promise<GetNameResult>
 ```
 
+Get the name for this app.
+
 **Returns:** <code>Promise&lt;<a href="#getnameresult">GetNameResult</a>&gt;</code>
 
 --------------------
@@ -83,6 +85,8 @@ getName() => Promise<GetNameResult>
 ```typescript
 getOptions() => Promise<GetOptionsResult>
 ```
+
+Get the configuration options for this app.
 
 **Returns:** <code>Promise&lt;<a href="#getoptionsresult">GetOptionsResult</a>&gt;</code>
 
